@@ -1,0 +1,6 @@
+framework module Pods_Greychain {
+  umbrella header "Pods-Greychain-umbrella.h"
+
+  export *
+  module * { export * }
+}
