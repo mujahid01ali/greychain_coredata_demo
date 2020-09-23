@@ -19,7 +19,6 @@
 		0A11320F251B543B000B67CA /* UserListTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A11320D251B543B000B67CA /* UserListTableCell.swift */; };
 		0A113210251B543B000B67CA /* UserListTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A11320E251B543B000B67CA /* UserListTableCell.xib */; };
 		0A113212251B567C000B67CA /* UserAddVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A113211251B567C000B67CA /* UserAddVC.swift */; };
-		0A113214251B5692000B67CA /* UserUpdateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A113213251B5692000B67CA /* UserUpdateVC.swift */; };
 		0A113217251B58D5000B67CA /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A113216251B58D5000B67CA /* UITextField.swift */; };
 		0A23EAB8251B5CA4003DCABC /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A23EAB7251B5CA4003DCABC /* UIViewController.swift */; };
 		0A23EABA251B9D03003DCABC /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A23EAB9251B9D03003DCABC /* Constant.swift */; };
@@ -41,7 +40,6 @@
 		0A11320D251B543B000B67CA /* UserListTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListTableCell.swift; sourceTree = "<group>"; };
 		0A11320E251B543B000B67CA /* UserListTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserListTableCell.xib; sourceTree = "<group>"; };
 		0A113211251B567C000B67CA /* UserAddVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAddVC.swift; sourceTree = "<group>"; };
-		0A113213251B5692000B67CA /* UserUpdateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUpdateVC.swift; sourceTree = "<group>"; };
 		0A113216251B58D5000B67CA /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		0A23EAB7251B5CA4003DCABC /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		0A23EAB9251B9D03003DCABC /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
@@ -110,7 +108,6 @@
 			children = (
 				0A1131F0251B4D3B000B67CA /* UserListVC.swift */,
 				0A113211251B567C000B67CA /* UserAddVC.swift */,
-				0A113213251B5692000B67CA /* UserUpdateVC.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -285,7 +282,6 @@
 				0A113212251B567C000B67CA /* UserAddVC.swift in Sources */,
 				0A113208251B4E6C000B67CA /* UserList+CoreDataProperties.swift in Sources */,
 				0A1131F1251B4D3B000B67CA /* UserListVC.swift in Sources */,
-				0A113214251B5692000B67CA /* UserUpdateVC.swift in Sources */,
 				0A113207251B4E6C000B67CA /* UserList+CoreDataClass.swift in Sources */,
 				0A1131ED251B4D3B000B67CA /* AppDelegate.swift in Sources */,
 				0A23EABA251B9D03003DCABC /* Constant.swift in Sources */,

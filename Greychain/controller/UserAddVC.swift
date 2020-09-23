@@ -75,6 +75,7 @@ class UserAddVC: UIViewController {
     }
     
     @IBAction func onClickSave(_ sender: Any) {
+        // validation
         guard let name = tfName.text,name.count>0 else {
             showToast(message: Constant.NAME_IS_MANDATORY, font: UIFont.systemFont(ofSize: 12))
             return
@@ -91,8 +92,10 @@ class UserAddVC: UIViewController {
         let imgData = self.imgView.image?.pngData()
         
         if isUpdate == true {
+            // for updating user
             DatabaseHelper.shareInstance.updateUser(name: name, email: email, dob: dob, img: imgData!)
         }else{
+            //for creating user
             DatabaseHelper.shareInstance.saveUser(object: ["name":name,"email":email,"dob":dob,"image":imgData as Any])
         }
         
@@ -101,7 +104,7 @@ class UserAddVC: UIViewController {
            // checking the viewController
             if vc.isKind(of: UserListVC.self){
                 delegate = vc as? UserAddVCdelegate
-                // removing the lasy viewcontroller
+                // removing the last viewcontroller
                 navigationController?.viewControllers.removeLast()
                 //call back
                 delegate?.reloadData()
@@ -120,6 +123,7 @@ class UserAddVC: UIViewController {
     
 }
 extension UserAddVC{
+    // for email valiiMilk = 14.0
     func isValidEmail(_ email: String) -> Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         
